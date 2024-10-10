@@ -1,6 +1,6 @@
+from flask_cors import CORS
 from flask import Flask, jsonify, request
 from pymongo import MongoClient
-from bson import ObjectId
 import os
 from dotenv import load_dotenv
 
@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS to allow cross-origin requests
 
 client = MongoClient(os.getenv('MONGO_URI')) # Connect to MongoDB Atlas, or use localhost "mongodb://localhost:27017/"
 db = client.portfolio_db
