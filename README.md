@@ -8,6 +8,8 @@ This Portfolio Management System is built with Flask for the backend, MongoDB fo
 - **Frontend**: React
 - **Database**: MongoDB (Atlas or Localhost)
 
+![img.png](img.png)
+
 ## Installation and Setup
 
 ### 1. Clone the Repository
